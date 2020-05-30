@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css">
+
+	<title>Recursion Tree</title>
+
+	<script src="libraries/p5.js"></script>
+	<script src="libraries/p5.dom.js"></script>
+	<script src="libraries/p5.sound.js"></script>
+	<script src="sketch.js"></script>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+		html {
+			min-height: 100%;
+			position: relative;
+		}
+
+		body {
+			padding-top: 10px;
+
+			justify-content: center;
+			text-align: center;
+
+
+
+			font-family: "Roboto", sans-serif;
+		}
+
+		.site-container {
+			display: flex;
+			flex-direction: column;
+			min-height: 90vh;
+		}
+
+		.site-content {
+			flex: 1;
+		}
+
+		p {
+			font-weight: 300;
+			font-size: 20px;
+		}
+
+		.btn.btn-secondary.btn-md{
+			margin-bottom: 10px;
+		}
+
+		#slider_angle_holder {
+			margin-bottom: 7.2px;
+		}
+
+		.noselect {
+		  -webkit-touch-callout: none; /* iOS Safari */
+		    -webkit-user-select: none; /* Safari */
+		     -khtml-user-select: none; /* Konqueror HTML */
+		       -moz-user-select: none; /* Old versions of Firefox */
+		        -ms-user-select: none; /* Internet Explorer/Edge */
+		            user-select: none; /* Non-prefixed version, currently
+		                                  supported by Chrome, Edge, Opera and Firefox */
+		}
+
+		footer {
+			flex-shrink: 0;
+			overflow: hidden;
+			position: relative;
+			width: 100%;
+			text-align: center;
+			background-color: #808080; 
+		}
+
+
+	</style>
+</head>
+<body>
+	<header>
+		
+		<h1>
+			Recursion Tree
+			<small class="text-muted" style="font-size: 24px">Click on the tree to make it grow!</small>
+		</h1>
+		
+	</header>
+
+	<div class="site-container">
+	<div class="site-content">
+	<div class="container">
+		<div class="row justify-content-sm-center align-items-center">
+			<div class="col-md-2">
+				<button type="button" class="btn btn-secondary btn-md" onclick="restart()">Reset Tree</button>
+			</div>
+		
+
+			<div class="col-sm-auto">
+				<p>Angle:</p>
+			</div>
+			<div class="col-sm-auto">
+				<div id="slider_angle_holder"></div>
+			</div>
+
+			<div class="col-sm-auto">
+				<p>Size:</p>
+			</div>
+			<div class="col-sm-auto">
+				<div id="slider_size_holder"></div>
+			</div>
+				
+		
+		</div>
+
+		
+	</div>
+
+	<div id="sketch_holder"></div>
+	
+
+	<div class="container">
+		<div class="col">
+			<p class = "noselect">This is an simple example of <strong>Object Oriented Recursion</strong> using <a href="https://p5js.org/">P5.js</a>.</p>
+		</div>
+	</div>
+	</div>
+	
+
+	<footer>
+
+		<p style="font-size: 16px" class="noselect">Made by <span style="color: #CCCCCC">Arthur Vergaças</span></p>
+		
+	</footer>
+	</div>
+	
+
+
+
+</body>
+</html>
