@@ -3,3 +3,4 @@
 
 <p>The <strong>Object Oriented</strong> approach was used due to the possibility of manipulating the tree, wich wouldn't be possible <em>or at least harder</em> in a convencional
 approach</p>
+<p>I also used the bootstrap framework for simple CSS beautification</p>
